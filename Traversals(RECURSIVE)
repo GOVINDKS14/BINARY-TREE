@@ -1,0 +1,23 @@
+//PREORDER
+public static void preorder(Node root){
+  if(root==null) return null;
+  System.out.print(root.data+" ");
+  preorder(root.left);
+  preorder(root.right);
+}
+
+//INORDER
+public static void inorder(Node root){
+  if(root==null) return null;
+  inorder(root.left);
+  System.out.print(root.data+" ");
+  inorder(root.right);
+}
+
+//POSTORDER
+public static void postorder(Node root){
+  if(root==null) return null;
+  postorder(root.left);
+  postorder(root.right);
+  SYstem.out.print(root.data+" ");
+}
